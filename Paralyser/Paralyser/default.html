@@ -6,11 +6,9 @@
     <script src="https://code.jquery.com/jquery-2.2.3.min.js" integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo=" crossorigin="anonymous"></script>
 </head>
 <body>
-    <form>
-        <div><textarea id="para"></textarea></div>
-        <div><label>Word Count: </label><span id="wordCount">0</span></div>
-        <div><button id="save">Save</button> </div>
-    </form>
+    <div><textarea id="para"></textarea></div>
+    <div><label>Word Count: </label><span id="wordCount">0</span></div>
+    <div><button id="save">Save</button></div>
     <script>
         function countWords(tx) {
             return tx.replace(/\w+/g, "x").replace(/[^x]+/g, "").length;
@@ -25,12 +23,13 @@
             return countWords(this.val());
         };
 
-        function SaveText() {
+        $("#save").click(function () {
             $.ajax({
                 url: '/api/paragraphs',
                 type: 'POST',
-                data: $para.text,
-                contentType: "application/json",
+                data: JSON.stringify($para.val()),
+                dataType: 'json',
+                contentType: 'application/json',
                 success: function (data) {
                     alert("save successful");
                 },
@@ -38,7 +37,7 @@
                     alert(x + '\n' + y + '\n' + z);
                 }
             });
-        }
+        });
     </script>
 </body>
 </html>

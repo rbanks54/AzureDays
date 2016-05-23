@@ -12,6 +12,9 @@ namespace Paralyser.Controllers
     {
         public void Post([FromBody]string text)
         {
+            if (string.IsNullOrWhiteSpace(text))
+                throw new HttpResponseException(HttpStatusCode.BadRequest);
+
             using (var db = new DatabaseContext())
             {
                 var p = new ParagraphText() { Text = text };
