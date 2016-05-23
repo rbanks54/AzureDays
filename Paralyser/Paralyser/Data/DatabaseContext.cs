@@ -8,7 +8,7 @@ namespace Paralyser.Data
 {
     public class DatabaseContext : DbContext
     {
-        public DatabaseContext() : base() { }
+        public DatabaseContext() : base("sqlAzure") { }
 
         public DbSet<ParagraphText> Paragraphs { get; set; }
     }

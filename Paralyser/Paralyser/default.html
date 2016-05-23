@@ -9,6 +9,7 @@
     <form>
         <div><textarea id="para"></textarea></div>
         <div><label>Word Count: </label><span id="wordCount">0</span></div>
+        <div><button id="save">Save</button> </div>
     </form>
     <script>
         function countWords(tx) {
@@ -23,6 +24,21 @@
         $.fn.countWords = function () {
             return countWords(this.val());
         };
+
+        function SaveText() {
+            $.ajax({
+                url: '/api/paragraphs',
+                type: 'POST',
+                data: $para.text,
+                contentType: "application/json",
+                success: function (data) {
+                    alert("save successful");
+                },
+                error: function (x, y, z) {
+                    alert(x + '\n' + y + '\n' + z);
+                }
+            });
+        }
     </script>
 </body>
 </html>
