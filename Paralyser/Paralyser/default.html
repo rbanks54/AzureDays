@@ -9,6 +9,7 @@
     <div><textarea id="para"></textarea></div>
     <div><label>Word Count: </label><span id="wordCount">0</span></div>
     <div><button id="save">Save</button></div>
+    <div><label>Word frequency:</label><input type="text" id="wordToFind"/><button id="find">Find It</button><span id="freq"></span></div>
     <script>
         function countWords(tx) {
             return tx.replace(/\w+/g, "x").replace(/[^x]+/g, "").length;

@@ -5,16 +5,43 @@ VisualStudioVersion = 14.0.25123.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Paralyser", "Paralyser\Paralyser.csproj", "{F8AAFAED-CBD1-4708-9186-9029EB365D9F}"
 EndProject
+Project("{A07B5EB6-E848-4116-A8D0-A826331D98C6}") = "WordFrequency", "WordFrequency\WordFrequency.sfproj", "{1FB305A5-AF94-438D-A653-C72D21913F09}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WordFrequencyService", "WordFrequencyService\WordFrequencyService.csproj", "{5C41D118-8DFC-43ED-A644-C4DEDD91BB9F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
 		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{F8AAFAED-CBD1-4708-9186-9029EB365D9F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{F8AAFAED-CBD1-4708-9186-9029EB365D9F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F8AAFAED-CBD1-4708-9186-9029EB365D9F}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{F8AAFAED-CBD1-4708-9186-9029EB365D9F}.Debug|x64.Build.0 = Debug|Any CPU
 		{F8AAFAED-CBD1-4708-9186-9029EB365D9F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F8AAFAED-CBD1-4708-9186-9029EB365D9F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F8AAFAED-CBD1-4708-9186-9029EB365D9F}.Release|x64.ActiveCfg = Release|Any CPU
+		{F8AAFAED-CBD1-4708-9186-9029EB365D9F}.Release|x64.Build.0 = Release|Any CPU
+		{1FB305A5-AF94-438D-A653-C72D21913F09}.Debug|Any CPU.ActiveCfg = Debug|x64
+		{1FB305A5-AF94-438D-A653-C72D21913F09}.Debug|Any CPU.Build.0 = Debug|x64
+		{1FB305A5-AF94-438D-A653-C72D21913F09}.Debug|Any CPU.Deploy.0 = Debug|x64
+		{1FB305A5-AF94-438D-A653-C72D21913F09}.Debug|x64.ActiveCfg = Debug|x64
+		{1FB305A5-AF94-438D-A653-C72D21913F09}.Debug|x64.Build.0 = Debug|x64
+		{1FB305A5-AF94-438D-A653-C72D21913F09}.Debug|x64.Deploy.0 = Debug|x64
+		{1FB305A5-AF94-438D-A653-C72D21913F09}.Release|Any CPU.ActiveCfg = Release|x64
+		{1FB305A5-AF94-438D-A653-C72D21913F09}.Release|x64.ActiveCfg = Release|x64
+		{1FB305A5-AF94-438D-A653-C72D21913F09}.Release|x64.Build.0 = Release|x64
+		{1FB305A5-AF94-438D-A653-C72D21913F09}.Release|x64.Deploy.0 = Release|x64
+		{5C41D118-8DFC-43ED-A644-C4DEDD91BB9F}.Debug|Any CPU.ActiveCfg = Debug|x64
+		{5C41D118-8DFC-43ED-A644-C4DEDD91BB9F}.Debug|Any CPU.Build.0 = Debug|x64
+		{5C41D118-8DFC-43ED-A644-C4DEDD91BB9F}.Debug|x64.ActiveCfg = Debug|x64
+		{5C41D118-8DFC-43ED-A644-C4DEDD91BB9F}.Debug|x64.Build.0 = Debug|x64
+		{5C41D118-8DFC-43ED-A644-C4DEDD91BB9F}.Release|Any CPU.ActiveCfg = Release|x64
+		{5C41D118-8DFC-43ED-A644-C4DEDD91BB9F}.Release|x64.ActiveCfg = Release|x64
+		{5C41D118-8DFC-43ED-A644-C4DEDD91BB9F}.Release|x64.Build.0 = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
