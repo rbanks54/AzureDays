@@ -6,6 +6,7 @@ using System.Web.Http;
 using System.Web.Routing;
 using System.Web.Security;
 using System.Web.SessionState;
+using Swashbuckle.Application;
 
 namespace Paralyser
 {
