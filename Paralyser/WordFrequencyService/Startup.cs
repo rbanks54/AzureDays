@@ -1,5 +1,6 @@
 ﻿using System.Web.Http;
 using Owin;
+using System.Web.Http.Cors;
 
 namespace WordFrequencyService
 {
@@ -11,6 +12,9 @@ namespace WordFrequencyService
         {
             // Configure Web API for self-host. 
             HttpConfiguration config = new HttpConfiguration();
+
+            var cors = new EnableCorsAttribute("*", "*", "*");
+            config.EnableCors(cors);
 
             config.Routes.MapHttpRoute(
                 name: "DefaultApi",

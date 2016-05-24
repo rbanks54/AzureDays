@@ -39,6 +39,21 @@
                 }
             });
         });
+
+        $("#find").click(function() {
+                $.ajax({
+                    url: 'http://rb-paralyser-cluster.australiaeast.cloudapp.azure.com:8907/api/frequency/' + $('#wordToFind').val(),
+                    type: 'GET',
+                    dataType: 'json',
+                    contentType: 'application/json',
+                    success: function (data) {
+                        $('#freq').text(data);
+                    },
+                    error: function (x, y, z) {
+                        alert(x + '\n' + y + '\n' + z);
+                    }
+                });
+        });
     </script>
 </body>
 </html>
